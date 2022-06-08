@@ -9,18 +9,55 @@
 
 <body>
 
-    <form action="results.html">
+    <form action="results.html" method="GET">
 
         <div>
-            <label for="">Name</label>
-            <input type="text">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="UserName" required>
         </div>
         <div>
-            <label for="">Password</label>
-            <input type="text">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
         </div>
         <div>
-            <button>Submit</button>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="16" max="150" step="1">
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="date id="date" min="">
+        </div>
+        <div>
+            Favourite Food:
+            <div>
+                <label for="pizza">Pizza:</label>
+                <input type="checkbox" name="pizza" id="pizza" value="pizza">
+            </div>
+            <div>
+                <label for="ramen">Ramen:</label>
+                <input type="checkbox" name="ramen" id="ramen" value="ramen">
+            </div>
+            <div>
+                <label for="sushi">Sushi:</label>
+                <input type="checkbox" name="sushi" id="sushi" value="sushi">
+            </div>
+        </div>
+        <div>
+            Gender:
+            <div>
+                <label for="female">Female:</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="male">Male:</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
         </div>
 
     </form>
